@@ -199,12 +199,56 @@ nav li a {
     padding: 40px 30px;
 }
 
+.our-sponsors {
+    text-align: center;
+    padding: 0 240px;
+    margin-top: 80px;
+}
+
+.our-sponsors .section-title {
+    margin-bottom: 20px;
+}
+
+.our-sponsors .light-gray-text {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.logo {
+    width: 160px;
+}
+
+/* Footer section */
+
+footer {
+    margin: 0 240px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 20px 200px;
+    margin-bottom: 50px;
+}
+
+.footer-text {
+    color: #424242;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 576px) {
     nav,
     nav > ul,
     .features-container,
     .experience-container,
-    .facts-cards-container {
+    .facts-cards-container,
+    .logo-container {
         flex-direction: column;
         gap: 20px;
         text-align: center;
@@ -213,7 +257,8 @@ nav li a {
     header,
     .features-container,
     .experience-container,
-    .some-facts {
+    .some-facts,
+    .our-sponsors {
         padding: 0 20px;
     }
 
@@ -244,19 +289,37 @@ nav li a {
         align-items: center;
     }
     
+    .logo-container {
+        align-items: center;
+    }
+
+    .our-sponsors .light-gray-text {
+        width: 100%;
+    }
+
+    footer {
+        margin: 20px 20px;
+        padding: 20px 20px;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
     nav,
     .features-container,
-    .experience-container {
+    .experience-container,
+    .logo-container {
         flex-direction: column;
     }
 
     header,
     .some-facts,
     .features-container,
-    .experience-container {
+    .experience-container,
+    .our-sponsors {
         padding: 0 50px;
     }
 
@@ -268,4 +331,12 @@ nav li a {
         width: 100px;
     }
 
+    .logo-container {
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer {
+        margin: 20px 50px;
+    }
 }
