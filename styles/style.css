@@ -86,24 +86,154 @@ nav li a {
     margin-bottom: 40px;
 }
 
+/* Features section */
+
+.features-container {
+    display: flex;
+    padding: 0 240px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px auto;
+}
+
+.features-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.features-img {
+    width: 300px;
+}
+
+.features-container .section-title {
+    margin-bottom: 20px;
+}
+
+.features-container .light-gray-text {
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+/* Experience section */
+
+.experience-container {
+    display: flex;
+    padding: 0 240px;
+    padding-right: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.architect-img {
+    width:600px;
+    margin: 0 40px;
+}
+
+.experience-container .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-cards-container .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+.experience-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 25px 30px;
+    color: #FFF;
+    text-align: center;
+    width: 240px;
+    position: relative;
+    bottom: 100px;
+    right: 20px;
+}
+
+.experience-title-1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.experience-title-2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;    
+}
+
 @media screen and (max-width: 576px) {
     nav,
-    nav > ul {
+    nav > ul,
+    .features-container,
+    .experience-container {
         flex-direction: column;
         gap: 20px;
+        text-align: center;
     }
 
     header {
         padding: 0 20px;
     }
+
+    .features-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features-container {
+        padding: 0 20px;
+    }
+
+    .features-container .light-gray-text {
+        width: 250px;
+        margin: 20px auto;
+    }
+
+    .experience-container {
+        padding: 0 20px;
+    }
+
+    .experience-badge {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .architect-img {
+        width: 100%;
+        margin: 0;
+
+    }
+    
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav {
+    nav,
+    .features-container,
+    .experience-container {
         flex-direction: column;
     }
 
     header {
         padding: 0 50px;
     }
+
+    .features-container,
+    .experience-container {
+        padding: 0 50px;
+
+    }
+
+    .features-img {
+        width: 200px;
+    }
+
 }
